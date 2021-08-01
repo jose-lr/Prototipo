@@ -110,8 +110,13 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Globales */
 .contenedor {
+  max-width: 120rem;
   width: 98%;
   margin: 0 auto;
 }
@@ -208,7 +213,7 @@ ul {
 /* Header */
 div.hero {
   background-image: url(../img/doctor.jpg);
-  height: 100vh;
+  height: 70vh;
   background-position: top center;
   background-size: cover;
 }
@@ -801,6 +806,145 @@ div.tabla-especialidad ul li i {
   padding: 10px;
   text-align: center;
 }  
+
+/* Página Tienda */
+.producto {
+  background-color: #fff;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  padding: 1rem;
+}
+
+.producto__imagen {
+  width: 100%;
+}
+
+.producto__informacion {
+  text-decoration: none !important;
+}
+
+.producto__nombre {
+  font-size: 2rem;
+  color: #1d5a4f;
+}
+
+.producto__precio {
+  font-size: 1rem;
+  color: #000;  
+}
+
+.producto__nombre,
+.producto__precio {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Gráficos */
+.grafico {
+  min-height: 20rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 1 / 3;
+}
+
+.grafico--apoyo1 {
+  grid-row: 2 / 3;
+  background-image: url(../img/apoyo1.jpg);
+}
+
+.grafico--apoyo2 {
+  background-image: url(../img/apoyo2.jpg);
+  grid-row: 8 / 9;
+}
+
+@media (min-width: 768px) {
+  .grafico--apoyo2 {
+    grid-row: 5 / 6;
+    grid-column: 2 / 4;
+  }
+}
+
+/* Página Nosotros */
+.nosotros {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+}
+
+@media (min-width: 768px) {
+  .nosotros {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+}
+
+.nosotros__imagen {
+  grid-row: 1 / 2;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+    .nosotros__imagen {
+      grid-column: 2 / 3;
+    }
+}
+
+/* Bloques */
+.bloques {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.comprar__titulo {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+@media (min-width: 768px) {
+    .bloques {
+      grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.bloque__imagen {
+  width: 80%;
+}
+
+.bloque{
+  text-align: center;
+  padding: auto;
+}
+
+.bloque__titulo {  
+  text-align: center; 
+  margin: rem 0;
+}
+
+/* Página Detalles */
+@media (min-width: 768px) {
+    .aparato {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 2rem;
+    }
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

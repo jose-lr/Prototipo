@@ -62,3 +62,29 @@
 
     }); // DOM CONTENT LOADED
 })();
+
+$(function() {
+    // Menú responsive
+    $('.menu-movil').on('click', function() {
+        $('.navegacion-principal').slideToggle();
+    });
+
+    // Programa de la clínica
+    $('.programa-clinica .info-especialista:first').show();
+    $('.menu-clinica a:first').addClass('activo');
+
+    $('.menu-clinica a').on('click', function(){
+        $('.menu-clinica a').removeClass('activo');
+        $(this).addClass('activo');
+        $('.ocultar').hide();
+        var enlace = $(this).attr('href');
+        $(enlace).fadeIn(1000);
+
+        return false;
+    });
+
+    // Animaciones para los números
+    $('.resumen-clinica li:nth-child(1) p').animateNumber({number: 3}, 1500);
+    $('.resumen-clinica li:nth-child(2) p').animateNumber({number: 5}, 1700);
+    $('.resumen-clinica li:nth-child(3) p').animateNumber({number: 8}, 1900);
+});

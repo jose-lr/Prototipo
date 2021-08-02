@@ -679,6 +679,10 @@ footer nav.redes-sociales a {
   color: #fff;
 }
 
+footer a.logo-footer {
+  text-align: left;
+}
+
 p.copyright {
   background-color: #222;
   color: #fff;

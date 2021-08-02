@@ -944,6 +944,107 @@ div.tabla-especialidad ul li i {
     }
 }
 
+/* Página del Blog */
+/* Introducción */
+.parte1 {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+}
+
+@media (min-width: 768px) {
+  .parte1 {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+}
+
+.introduccion__imagen {
+  grid-row: 1 / 2;
+  width: 100%;
+  margin: 3.5rem 0;
+}
+
+@media (min-width: 768px) {
+    .introduccion__imagen {
+      grid-column: 2 / 3;
+    }
+}
+
+/* Sordera */
+.parte2 {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+}
+
+@media (min-width: 768px) {
+  .parte2 {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+}
+
+.sordera__imagen {
+  grid-row: 1 / 2;
+  width: 100%;
+  margin: 3.5rem 0;
+}
+
+@media (min-width: 768px) {
+    .sordera__imagen {
+      grid-column: 1 / 2;
+    }
+}
+
+/* Tinnitus */
+.parte3 {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+}
+
+@media (min-width: 768px) {
+  .parte3 {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+}
+
+.tinnitus__imagen {
+  grid-row: 1 / 2;
+  width: 100%;
+  margin: 3.5rem 0;
+}
+
+@media (min-width: 768px) {
+    .tinnitus__imagen {
+      grid-column: 2 / 3;
+    }
+}
+
+/* Vértigo */
+.parte4 {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+}
+
+@media (min-width: 768px) {
+  .parte4 {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+}
+
+.vertigo__imagen {
+  grid-row: 1 / 2;
+  width: 100%;
+  margin: 3.5rem 0;
+}
+
+@media (min-width: 768px) {
+    .vertigo__imagen {
+      grid-column: 1 / 2;
+    }
+}
+
 
 /* ==========================================================================
    Helper classes

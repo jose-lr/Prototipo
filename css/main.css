@@ -1071,6 +1071,45 @@ div.tabla-especialidad ul li i {
     }
 }
 
+/* Login */
+.imgcontainer {
+  text-align: center;
+  margin: 20px 0;
+}
+
+div.campo_login {
+  padding: 10px;
+  text-align: center;  
+}
+
+div.login {
+  padding: 10px;
+  text-align: center;
+}
+
+.derecho {
+  margin-left: 50px;
+}
+
+.remember {
+  padding: 10px;
+  text-align: center;
+}
+
+/* Agenda cita */
+div.campo_especialidad {
+  padding: 10px;
+  text-align: center;
+}
+
+div.campo_fecha {
+  padding: 10px;
+  text-align: center;
+}
+
+div.btnRegistro {
+  text-align: center;
+}
 
 /* ==========================================================================
    Helper classes

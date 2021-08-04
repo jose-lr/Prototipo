@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Welcome!</title>
+	<title>Bienvenido</title>
 <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -71,40 +71,53 @@
       </nav>
     </div> <!--.contenedor-->
   </div> <!--.barra-->
-  <section class="seccion contenedor">
+
+  <main class="contenedor">
+    <section>
       <h2> Agenda tu cita</h2>
       <form id="registro" class="registro" action="index.html" method="post">
-        <div id="datos_cita" class="registro cita clearfix">
-            
-            <div class="campo">
-                <label for="especialidad">Especialidad:</label>
-                <input type="text" id="especialidad" name="especialidad" placeholder="Selecciona la especialidad*">
-            </div>
+        <div class="imgcontainer">
+          <img src="img/icono_3.png" alt="Avatar" class="avatar">
+        </div>
+        <section class="seccion">
+          <div class="campo_especialidad">
+            <label for="especialidad">Especialidad:
+              <select>
+                <option disabled selected>-- Seleccionar Especialidad --</option>
+                <option>Audición</option>
+                <option>Odontología</option>
+                <option>Pediatría</option>
+              </select>                                      
+            </label>
+            <!--<input type="label" id="especialidad" name="especialidad" placeholder="Selecciona la especialidad*">-->
+          </div>
 
-              <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-              <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-              <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-              <script>
-                $( function() {
-                  $( "#campofecha" ).datepicker({
-                  numberOfMonths: 2,
-                  showButtonPanel: true
-                  });
-                } );
-              </script>
+          <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+          <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+          <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+          <script>
+            $( function() {
+              $( "#campofecha" ).datepicker({
+              numberOfMonths: 2,
+              showButtonPanel: true
+              });
+            } );
+          </script>
 
- 
-            <p>Fecha: <input type="text" id="campofecha"></p>
-           
-        </div> <!--.datos_usuario-->
-
-        
-
-        <div id="registro" class="registro caja clearfix">            
-            <input id="btnRegistro" type="submit" class="button" value="enviar">
-        </div> <!--.resumen-->
+          <div class="campo_fecha">
+            <label for="fecha">Fecha:</label>
+            <input type="text" id="campofecha" placeholder="Elige la fecha para tu cita"></p>
+          </div>  
+        </section>                                                                
       </form> <!--.registro-->
-  </section>
+
+      <div class="btnRegistro">            
+        <input id="btnRegistro" type="submit" class="button" value="enviar">
+      </div> <!--.resumen-->
+
+    </section>
+  </main>
+  
   <footer class="site-footer">
   <div class="contenedor clearfix">
       <div class="footer-informacion">
